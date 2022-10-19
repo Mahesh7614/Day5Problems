@@ -37,7 +37,8 @@ namespace Day5Problems
 
             }
             double Percentage = (count1 / count2) * 100;
-            Console.WriteLine("Percentage of Head vs Tail is : " + Percentage);      
+           // Console.WriteLine("Percentage of Head vs Tail is : " + Percentage);
+            Console.WriteLine("Percentage of Head vs Tail is : " + (Math.Round(Percentage, 2)));
         }
     }
 }

@@ -20,9 +20,9 @@ namespace Day5Problems
             int b = 0;
             for (int i = 0; i < N; i++)
             {
-                if (N >= 32)
+                if (N >= 313)
                 {
-                    Console.WriteLine("Value is Int Limit");
+                    Console.WriteLine("Value is ouf of Int Limit");
                     break;
                 }
                 num = (2 * a);

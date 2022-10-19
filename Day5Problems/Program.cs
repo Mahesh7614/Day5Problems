@@ -5,12 +5,12 @@
         static void Main(string[] args)
         {
             //Flip Coin and print percentage of Heads and Tails
-            var fl = UserInputForFlip();
+           var fl = UserInputForFlip();
             FlipCoinPercentage coin = new FlipCoinPercentage(fl.Times);
             coin.getPercentageOfFlipCion();
 
             //Leap Year
-            var l1 = YearInput();
+            /*var l1 = YearInput();
             LeapYear Year = new LeapYear(l1.year);
             Year.toCheckLeapYear();
 
@@ -20,7 +20,7 @@
             power.getPowerOf2();
 
             //Harmonic Number
-            var hr = UserInputForHarmonicSeries();
+            /*var hr = UserInputForHarmonicSeries();
             HarmonicNumber Harmonic = new HarmonicNumber(hr.n);
             Harmonic.harmonicSeries();
 
@@ -52,7 +52,7 @@
             //Find the Largest Among Three Numbers
             var lr = UserInputForLargestNum();
             LargestNumberAmongUs largest = new LargestNumberAmongUs(lr.Num1,lr.Num2,lr.Num3);
-            largest.CalculateLargestNumber();
+            largest.CalculateLargestNumber();*/
 
 
         }
