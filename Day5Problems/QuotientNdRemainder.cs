@@ -16,6 +16,19 @@ namespace Day5Problems
             this.dividend = dividend;
             this.divisor = divisor;
         }
+        public static QuotientNdRemainder UserInputForDivision()
+        {
+            Console.WriteLine("Enter Divident : ");
+            int Di = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter Divisor : ");
+            int Dv = Convert.ToInt32(Console.ReadLine());
+
+            return new QuotientNdRemainder(Di, Dv)
+            {
+                dividend = Di,
+                divisor = Dv
+            };
+        }
         public void Calculation()
         {
             int quotient = dividend / divisor;

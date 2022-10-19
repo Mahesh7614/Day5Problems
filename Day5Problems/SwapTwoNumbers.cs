@@ -16,6 +16,19 @@ namespace Day5Problems
             Number1 = number1;
             Number2 = number2;
         }
+        public static SwapTwoNumbers UserInputNumbers()
+        {
+            Console.WriteLine("Enter Number 1 : ");
+            int num1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter Number 2 : ");
+            int num2 = Convert.ToInt32(Console.ReadLine());
+
+            return new SwapTwoNumbers(num1, num2)
+            {
+                Number1 = num1,
+                Number2 = num2
+            };
+        }
         public void SwappingOfTwoNumbers()
         {
             int Number3 = Number1;

@@ -14,6 +14,16 @@ namespace Day5Problems
         {
             Alphabet = alphabet;
         }
+        public static VowelOrConsonent UserInputAlphabet()
+        {
+            Console.WriteLine("Enter Alphabet to Check Vowel or Consonant : ");
+            char alpha = Convert.ToChar(Console.ReadLine().ToLower());
+
+            return new VowelOrConsonent(alpha)
+            {
+                Alphabet = alpha
+            };
+        }
         public void CheckVowelOrConsonent()
         {
             if (Alphabet == 'a' || Alphabet == 'e' || Alphabet == 'i' || Alphabet == 'o' || Alphabet == 'u')

@@ -14,6 +14,16 @@ namespace Day5Problems
         {
             Number = number;
         }
+        public static EvenOrOdd UserInputNum()
+        {
+            Console.WriteLine("Enter Number to Check Even or Odd : ");
+            int num = Convert.ToInt32(Console.ReadLine());
+
+            return new EvenOrOdd(num)
+            {
+                Number = num
+            };
+        }
         public void checkEvenOdd()
         {
             if (Number % 2 == 0)

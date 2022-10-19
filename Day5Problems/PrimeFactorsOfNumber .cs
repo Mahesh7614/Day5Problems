@@ -14,7 +14,16 @@ namespace Day5Problems
         {
             this.Number = NUMBER;
         }
+        public static PrimeFactorsOfNumber UserInputPrimeFactorNumber()
+        {
+            Console.WriteLine("Enter the Number For Prime Factor : ");
+            int F = Convert.ToInt32(Console.ReadLine());
 
+            return new PrimeFactorsOfNumber(F)
+            {
+                Number = F
+            };
+        }
         public void PrimeFactors()
         {
             for (Factor = 2; Number > 1; Factor++)

@@ -16,6 +16,23 @@ namespace Day5Problems
             Num2 = num2;
             Num3 = num3;
         }
+        public static LargestNumberAmongUs UserInputForLargestNum()
+        {
+            Console.WriteLine("To Find Largest Number Enter Three Numbers Below");
+            Console.WriteLine("Enter Number 1 : ");
+            int n1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter Number 2 : ");
+            int n2 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter Number 3 : ");
+            int n3 = Convert.ToInt32(Console.ReadLine());
+
+            return new LargestNumberAmongUs(n1, n2, n3)
+            {
+                Num1 = n1,
+                Num2 = n2,
+                Num3 = n3
+            };
+        }
         public void CalculateLargestNumber()
         {
             if (Num1 > Num2 && Num1 > Num3)

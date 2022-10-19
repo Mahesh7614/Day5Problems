@@ -15,7 +15,16 @@ namespace Day5Problems
         {
             this.n = N;
         }
+        public static HarmonicNumber UserInputForHarmonicSeries()
+        {
+            Console.WriteLine("Enter Number : ");
+            int H = Convert.ToInt32(Console.ReadLine());
 
+            return new HarmonicNumber(H)
+            {
+                n = H
+            };
+        }
         public void harmonicSeries()
         {
             for (int i = 1; i <= n; i++)

@@ -15,6 +15,16 @@ namespace Day5Problems
         {
             this.Times = times;
         }
+        public static FlipCoinPercentage UserInputForFlip()
+        {
+            Console.WriteLine("Enter How Many Times You Have to Flip a Coin : ");
+            int C = Convert.ToInt32(Console.ReadLine());
+
+            return new FlipCoinPercentage(C)
+            {
+                Times = C
+            };
+        }
         public void getPercentageOfFlipCion()
         {
             float count1 = 0;

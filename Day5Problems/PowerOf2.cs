@@ -14,6 +14,16 @@ namespace Day5Problems
         {
             this.N = n;
         }
+        public static PowerOf2 UserInputPowerOf2()
+        {
+            Console.WriteLine("Enter the Index of 2 : ");
+            int Power = Convert.ToInt32(Console.ReadLine());
+
+            return new PowerOf2(Power)
+            {
+                N = Power
+            };
+        }
         public void getPowerOf2()
         {
             int a = 1;

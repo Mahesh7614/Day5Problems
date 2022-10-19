@@ -15,6 +15,16 @@ namespace Day5Problems
         {
             this.year = YEAR;
         }
+        public static LeapYear YearInput()
+        {
+            Console.WriteLine("Enter the Year to Check Whether Leap Year or Not : ");
+            int yeartoread = Convert.ToInt32(Console.ReadLine());
+
+            return new LeapYear(yeartoread)
+            {
+                year = yeartoread
+            };
+        }
         // Method - to check whether year is leap or not.  
         public void toCheckLeapYear()
         {
