@@ -30,7 +30,7 @@ namespace Day5Problems
             int b = 0;
             for (int i = 0; i < N; i++)
             {
-                if (N >= 313)
+                if (N >= 31)
                 {
                     Console.WriteLine("Value is ouf of Int Limit");
                     break;
